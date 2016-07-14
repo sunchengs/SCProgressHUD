@@ -1,6 +1,8 @@
 # SCProgressHUD
 轻量型ProgressHUD
 
+![SCProgressHUD.gif](http://upload-images.jianshu.io/upload_images/184085-a7ab0da005d9743f.gif?imageMogr2/auto-orient/strip)
+
 ##如何使用
 使用起来很简单，基本上调用类方法就可以完成基本需求
 
