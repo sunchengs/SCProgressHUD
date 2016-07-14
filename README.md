@@ -2,7 +2,9 @@
 轻量型ProgressHUD
 
 ##如何使用
-使用以来很简单，基本上调用类方法可以完成基本需求
+使用起来很简单，基本上调用类方法就可以完成基本需求
+1.加入头文件`#import "SCProgressHUD.h"`
+2.调用
 ```
 // 显示菊花
 - (IBAction)showHUD:(id)sender {
