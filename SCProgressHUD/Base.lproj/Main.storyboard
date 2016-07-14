@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,6 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7q-Ys-bFJ">
+                                <rect key="frame" x="29" y="88" width="134" height="30"/>
+                                <state key="normal" title="showHUDAddedTo:"/>
+                                <connections>
+                                    <action selector="showHUD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUi-8b-hCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlo-S0-gV8">
+                                <rect key="frame" x="29" y="156" width="123" height="30"/>
+                                <state key="normal" title="showMsg: inView:"/>
+                                <connections>
+                                    <action selector="showMsg_inView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHn-HN-tmc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-gL-qGm">
+                                <rect key="frame" x="29" y="374" width="278" height="30"/>
+                                <state key="normal" title="showMsg: inView: afterDelay:completed:"/>
+                                <connections>
+                                    <action selector="showMsg_inView_afterDelay_completed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLH-Sg-aQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK3-pL-dWh">
+                                <rect key="frame" x="29" y="226" width="151" height="30"/>
+                                <state key="normal" title="showMsg: completed:"/>
+                                <connections>
+                                    <action selector="showMsg_completed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1WR-S5-P1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHc-Mm-5X9">
+                                <rect key="frame" x="29" y="300" width="230" height="30"/>
+                                <state key="normal" title="showMsg: afterDelay: completed:"/>
+                                <connections>
+                                    <action selector="showMsg_afterDelay_completed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vEz-1r-1Th"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gn-qj-eEI">
+                                <rect key="frame" x="29" y="463" width="122" height="30"/>
+                                <state key="normal" title="hideHUDForView:"/>
+                                <connections>
+                                    <action selector="hideHUDForView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jF-or-sqL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>

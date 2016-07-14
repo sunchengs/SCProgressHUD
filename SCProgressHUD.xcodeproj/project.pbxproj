@@ -13,6 +13,7 @@
 		AE22BE3F1D3780CF00900CA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE22BE3D1D3780CF00900CA5 /* Main.storyboard */; };
 		AE22BE411D3780CF00900CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE22BE401D3780CF00900CA5 /* Assets.xcassets */; };
 		AE22BE441D3780CF00900CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE22BE421D3780CF00900CA5 /* LaunchScreen.storyboard */; };
+		AE22BE4E1D37811B00900CA5 /* SCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AE22BE4D1D37811B00900CA5 /* SCProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		AE22BE401D3780CF00900CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE22BE431D3780CF00900CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE22BE451D3780CF00900CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE22BE4C1D37811B00900CA5 /* SCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCProgressHUD.h; sourceTree = "<group>"; };
+		AE22BE4D1D37811B00900CA5 /* SCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				AE22BE3A1D3780CF00900CA5 /* ViewController.h */,
 				AE22BE3B1D3780CF00900CA5 /* ViewController.m */,
 				AE22BE3D1D3780CF00900CA5 /* Main.storyboard */,
+				AE22BE4B1D37810000900CA5 /* SCProgressHUD */,
 				AE22BE401D3780CF00900CA5 /* Assets.xcassets */,
 				AE22BE421D3780CF00900CA5 /* LaunchScreen.storyboard */,
 				AE22BE451D3780CF00900CA5 /* Info.plist */,
@@ -77,6 +81,15 @@
 				AE22BE351D3780CF00900CA5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE22BE4B1D37810000900CA5 /* SCProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AE22BE4C1D37811B00900CA5 /* SCProgressHUD.h */,
+				AE22BE4D1D37811B00900CA5 /* SCProgressHUD.m */,
+			);
+			path = SCProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			files = (
 				AE22BE3C1D3780CF00900CA5 /* ViewController.m in Sources */,
 				AE22BE391D3780CF00900CA5 /* AppDelegate.m in Sources */,
+				AE22BE4E1D37811B00900CA5 /* SCProgressHUD.m in Sources */,
 				AE22BE361D3780CF00900CA5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
