@@ -3,9 +3,7 @@
 
 ##如何使用
 使用以来很简单，基本上调用类方法可以完成基本需求
-、、、
-
-- (IBAction)showHUD:(id)sender {
+、、、- (IBAction)showHUD:(id)sender {
     [SCProgressHUD showHUDAddedTo:self.view];
     [self performSelector:@selector(hidenHUD) withObject:nil afterDelay:2];
 }
@@ -39,5 +37,4 @@
 - (void)hidenHUD
 {
     [SCProgressHUD hideHUDForView:self.view];
-}
-、、、
+}、、、
