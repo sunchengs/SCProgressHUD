@@ -15,6 +15,10 @@ static CGFloat const kAnimationLeftScale = 1.2;
 static CGFloat const kTopMargin          = 10;
 static CGFloat const kLeftMargin         = 10;
 
+@interface SCProgressHUD () <CAAnimationDelegate>
+
+@end
+
 @implementation SCProgressHUD
 
 - (id)initWithFrame:(CGRect)frame
@@ -29,6 +33,11 @@ static CGFloat const kLeftMargin         = 10;
 +(void)showMsg:(NSString *)msg inView:(UIView*)theView
 {
     [SCProgressHUD showMsg:msg inView:theView afterDelay:kDefaultDuration completed:^{}];
+}
+
++ (void)showMsg:(NSString *)msg afterDelay:(NSTimeInterval)delay
+{
+    [SCProgressHUD showMsg:msg inView:nil afterDelay:delay completed:^{}];
 }
 
 + (void)showMsg:(NSString *)msg completed:(ShowCompleted)completedBlock
@@ -66,7 +75,7 @@ static CGFloat const kLeftMargin         = 10;
     backgroundView.tag = 100;
     UIWindow *window;
     if (!view){
-       window = [self getUnhiddenFrontWindowOfApplication];
+        window = [self getUnhiddenFrontWindowOfApplication];
     }
     else{
         window = [SCProgressHUD getWindow];
@@ -193,7 +202,7 @@ static CGFloat const kLeftMargin         = 10;
     if (flag)
     {
         self.completedBlock();
-        [self removeFromSuperview];
+        [self hidenHUD];
         
         /*
          // 消失动画
